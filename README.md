@@ -18,7 +18,7 @@ In our Excel spreadsheet, we created run buttons that would populate an input bo
 
 ![This is an image](https://github.com/weise142/stock_analysis/blob/9e6fd17c16a46779f7a9e674a376ca1bd4f573d3/2017%20Stock%20Performance.png)![This is an image](https://github.com/weise142/stock_analysis/blob/9e6fd17c16a46779f7a9e674a376ca1bd4f573d3/2018%20Stock%20Performance.png)
 
-Left: Stock Performance 2017, Right: Stock Performance 2018
+Top: Stock Performance 2017, Bottom: Stock Performance 2018
 
 In comparing the returns for these stocks between 2017 and 2018, there are a few factors we need to look at. The total daily volume(TDV) of these stocks did not have an impact on the returns. For example, SEDG and JKS had similar TDV in 2017 and 2018 but the return percentages were 53.9% and -60.5% for JKS and 184.5% and -7.8% for SEDG in 2017 and 2018 respectively. TDV was also not relevant to how how much a high or low a stocks returns were respectively. The highest return in 2017 was DQ at 199.4% despite having the lowest TDV, while RUN had the best return in 2018 of 84% despite having the 3rd highest TDV. Although the TDV does not appear to have an impact on the return percentage for a specific year, it does help illustrate potential volatility of a stocks based on its outstanding share float. Generally stocks such as DQ and HASI are going to be more volatile than stocks such as FSLR and SPWR because the delta value per share of the stock is going to be lower due to a larger outstanding share float. 
 
