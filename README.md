@@ -17,6 +17,7 @@ In our Excel spreadsheet, we created run buttons that would populate an input bo
 ##Green Stocks Analysis
 
 ![This is an image](https://github.com/weise142/stock_analysis/blob/9e6fd17c16a46779f7a9e674a376ca1bd4f573d3/2017%20Stock%20Performance.png)![This is an image](https://github.com/weise142/stock_analysis/blob/9e6fd17c16a46779f7a9e674a376ca1bd4f573d3/2018%20Stock%20Performance.png)
+
 Left: Stock Performance 2017, Right: Stock Performance 2018
 
 In comparing the returns for these stocks between 2017 and 2018, there are a few factors we need to look at. The total daily volume(TDV) of these stocks did not have an impact on the returns. For example, SEDG and JKS had similar TDV in 2017 and 2018 but the return percentages were 53.9% and -60.5% for JKS and 184.5% and -7.8% for SEDG in 2017 and 2018 respectively. TDV was also not relevant to how how much a high or low a stocks returns were respectively. The highest return in 2017 was DQ at 199.4% despite having the lowest TDV, while RUN had the best return in 2018 of 84% despite having the 3rd highest TDV. Although the TDV does not appear to have an impact on the return percentage for a specific year, it does help illustrate potential volatility of a stocks based on its outstanding share float. Generally stocks such as DQ and HASI are going to be more volatile than stocks such as FSLR and SPWR because the delta value per share of the stock is going to be lower due to a larger outstanding share float. 
@@ -26,9 +27,11 @@ This analysis is helpful as well, because it helps illustrate the vlatility and 
 ##Run Time Comparison: Original vs Refactored Code
 
 ![This is an image](https://github.com/weise142/stock_analysis/blob/9e6fd17c16a46779f7a9e674a376ca1bd4f573d3/Initial%202017%20run%20time.png)![This is an image](https://github.com/weise142/stock_analysis/blob/9e6fd17c16a46779f7a9e674a376ca1bd4f573d3/Initial%202018%20run%20time.png)
+
 Top: Run Time of original code 2017, Bottom: Run Time of original code 2018
 
 ![This is an image](https://github.com/weise142/stock_analysis/blob/9e6fd17c16a46779f7a9e674a376ca1bd4f573d3/Refactored%202017%20run%20time.png)![This is an image](https://github.com/weise142/stock_analysis/blob/9e6fd17c16a46779f7a9e674a376ca1bd4f573d3/Refactored%202018%20run%20time.png)
+
 Top: Run Time of refactored code 2017, Bottom: Run Time of refactored code 2018
 
 The run times in the code significantly decreased. Refactoring the code is important because of the time advantage and efficiencies you can create, especially when working with large datasets. Initially, Steve was looking over only 12 stocks related to Green Energy, but he now wants to use the code to expand it to the remaining stocks in the market. If we did not refactor our code it would take significantly longer to run the analysis on the entire stock market and when we consider this in the realm of work, inefficiencies cost money.
@@ -36,13 +39,17 @@ The run times in the code significantly decreased. Refactoring the code is impor
 #Code Comparisons: Original vs Refactored Code
 
 The original code contained a nested for loop and within the nested loop it would output the data creating a significantly higher number of iterations.
+
 ![This is an image](https://github.com/weise142/stock_analysis/blob/c0d82116ee1692ff8128a306f764beb42b19890a/Initial%20Code.png)
 
 In the refactored code we created one loop, without nested loops, and moved the output of the data to its own separate for loop. This drastically reduced the number of iterations for the macro to run through, thus reducing the run time.
-![This is an image](https://github.com/weise142/stock_analysis/blob/c0d82116ee1692ff8128a306f764beb42b19890a/Refactored%20Code%201.png)![This is an image}(https://github.com/weise142/stock_analysis/blob/c0d82116ee1692ff8128a306f764beb42b19890a/Refactored%20Code%202.png)
+
+![This is an image](https://github.com/weise142/stock_analysis/blob/c0d82116ee1692ff8128a306f764beb42b19890a/Refactored%20Code%201.png)![This is an image](https://github.com/weise142/stock_analysis/blob/c0d82116ee1692ff8128a306f764beb42b19890a/Refactored%20Code%202.png)
 
 ##Advantages
+
 As noted earlier, the importance of refactoring this code is because it will allow us to run our analysis on a larger dataset in a shorter amount of time. Since Steve is considering running an analysis on all stocks, this means an analysis on over 40,000 stocks on 252 trading days in a year. With that many data points, having efficient code is important. Another impotant factor of refactoring the code is that it becomes more maintainable, meaning if an error occurs or we want to add data points we are better able to troubleshoot and insert that data into our macro. 
 
 ##Disadvantages
+
 One of the disadvantages of refactoring our code is that we know our original code worked, meaning we know we can get results when using it. When we attempt to refactor our code we may land in a situation where we have no idea how to proceed or debug an error and unless we are able to eventually figure it our or get help then that was wasted time. We also do not know how long it will take us to refactor code. Since we know we have usable, working code, it means that using additional time to refactor code may not be worth it or if we spend too much time refactoring the code, the time savings we gain in refactoring may may not equate or exceed the time we spent refactoring meaning we made our code less cost efficient. 
