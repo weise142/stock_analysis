@@ -15,6 +15,7 @@ In our Excel spreadsheet, we created run buttons that would populate an input bo
 #Results
 
 ##Green Stocks Analysis
+
 ![This is an image](https://github.com/weise142/stock_analysis/blob/9e6fd17c16a46779f7a9e674a376ca1bd4f573d3/2017%20Stock%20Performance.png)![This is an image](https://github.com/weise142/stock_analysis/blob/9e6fd17c16a46779f7a9e674a376ca1bd4f573d3/2018%20Stock%20Performance.png)
 Left: Stock Performance 2017, Right: Stock Performance 2018
 
